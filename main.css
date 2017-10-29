@@ -1,17 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 body{
-	background: #003983;
-	font-family: Verdana;
+	background: #adadad;
+	font-family: Oswald;
+  color: #004071;
+}
+
+img{
+  max-width: 100%;
+}
+
+h1, h2{
+	text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 h1{
-	color: white;
-	text-align: center;
+  margin-bottom: -10px;
+  font-size: 3em;
+}
+
+h2{
+  margin-bottom: 15px;
+  font-size: 2em;
 }
 
 form{
 	margin: auto; 
 	background: white;
-	padding: 12px;
+	padding: 10px;
+  padding-bottom: 30px;
+  box-shadow: 3px 3px 2px #888888;
 }
 
 br {
@@ -24,7 +44,7 @@ form label {
 	display: block;
 	text-align: center;
 	line-height: 150%;
-	font-size: .85em;
+  margin-top: 20px;
 }
 
 input, textarea{
@@ -36,14 +56,34 @@ input, textarea{
 input{
 	border: none;
 	border-bottom: 2px solid black;
-	background: #E2E2E2;
 	width: 300px;
 }
 
+input, textarea{
+  transition: all 0.4s;
+}
+
+input:hover, textarea:hover{
+  outline: none;
+  background: #f2f2f2;
+}
+
+input:focus, textarea:focus{
+  outline: none;
+  background: #e8e8e8;
+}
+
 input[type=submit]{
+  margin-top: 35px;
 	width: 100px;
+  height: 25px;
 	border: 2px solid black;
 	background: white;
+}
+
+input[type=submit]:hover{
+  cursor: pointer;
+  box-shadow: 3px 3px 5px #888888;
 }
 
 textarea {
@@ -56,14 +96,6 @@ textarea {
 	background-position: bottom right;
 	background-repeat: no-repeat;
 	resize: none;
-}
-
-input:focus{
-	outline: none;
-}
-
-textarea:focus{
-	outline: none;
 }
 
 .center{

@@ -36,7 +36,7 @@
 			<label>References </label><br>
 			<input name='References'><br>
 			
-			<input type='submit' name='submit'/>
+			<input type='submit' name='submit' id="submit"/>
 		</form>
 	</div>
 
@@ -54,6 +54,7 @@
 	}
 	
 	h1, h2{
+    font-family: Oswald;
 		text-align: center;
 		margin: 0;
 		padding: 0;
@@ -75,6 +76,7 @@
 		padding: 10px;
 		padding-bottom: 30px;
 		margin-bottom: 30px;
+    border: 1px solid black;
 		box-shadow: 3px 3px 2px #888888;
 	}
 	
@@ -118,7 +120,9 @@
 		background: #e8e8e8;
 	}
 	
-	input[type=submit]{
+	#submit{
+  	font-family: Oswald;
+  	border-radius: 0;
 		margin-top: 35px;
 		width: 100px;
 		height: 25px;
@@ -126,7 +130,7 @@
 		background: white;
 	}
 	
-	input[type=submit]:hover{
+	#submit:hover{
 		cursor: pointer;
 		box-shadow: 3px 3px 5px #888888;
 	}
